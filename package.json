@@ -1,0 +1,29 @@
+{
+  "name": "GraphQL",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --config nodemon.json src/index.ts",
+    "dbServer": "json-server --watch db.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.2.5",
+    "graphql": "^14.0.2",
+    "uuidv4": "^6.2.7"
+  },
+  "devDependencies": {
+    "@types/graphql": "^14.0.3",
+    "@types/node": "^14.14.41",
+    "apollo-datasource-rest": "^0.12.0",
+    "graphql-tools": "^4.0.3",
+    "json-server": "^0.16.3",
+    "nodemon": "^1.18.7",
+    "ts-node": "^9.1.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.2.1"
+  }
+}

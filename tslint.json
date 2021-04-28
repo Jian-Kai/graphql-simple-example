@@ -1,0 +1,14 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "rules": {
+        "no-any": true,
+        "curly": true,
+        "quotemark": [
+            true,
+            "double"
+        ]
+    },
+}

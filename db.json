@@ -1,0 +1,33 @@
+{
+  "books": [
+    {
+      "id": "0",
+      "title": "Javascript!!!"
+    },
+    {
+      "id": "1",
+      "title": "股神",
+      "author": "巴菲特"
+    }
+  ],
+  "comments": [
+    {
+      "id": "0",
+      "bookID": "0",
+      "content": "Good book!",
+      "time": "2021-04-28"
+    },
+    {
+      "id": "1",
+      "bookID": "0",
+      "content": "nice!",
+      "time": "2021-04-28"
+    },
+    {
+      "id": "2",
+      "bookID": "0",
+      "content": "good!",
+      "time": "2021-04-28"
+    }
+  ]
+}
