@@ -2,7 +2,7 @@ import { RESTDataSource } from 'apollo-datasource-rest'
 import { uuid } from 'uuidv4';
 
 
-class BookAPI extends RESTDataSource {
+class ThirdPartyAPI extends RESTDataSource {
     constructor() {
         super();
         this.baseURL = 'http://localhost:3000/';
@@ -28,4 +28,4 @@ class BookAPI extends RESTDataSource {
     }
 }
 
-export default BookAPI
+export default ThirdPartyAPI

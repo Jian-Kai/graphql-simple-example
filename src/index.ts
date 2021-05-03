@@ -1,12 +1,12 @@
 import { ApolloServer } from "apollo-server";
-import BookAPI from './thirdPartyAPI/Book';
+import ThirdPartyAPI from './thirdPartyAPI/ThirdPartyAPI';
 import schema from "./schema";
 
 const server = new ApolloServer({
     schema,
     dataSources: () => {
         return {
-            bookAPI: new BookAPI(),
+            ThirdPartyAPI: new ThirdPartyAPI(),
         };
     },
 }) as any;

@@ -1,7 +1,7 @@
 import { gql, makeExecutableSchema, IResolvers } from "apollo-server";
 const { GraphQLScalarType, Kind } = require('graphql');
 import { typeDefs as bookTypeDefs, Query as bookQuery, Mutation as bookMutation, Other as bookOther } from './book';
-import { typeDefs as commentTypeDefs } from './comment';
+import { typeDefs as commentTypeDefs, Query as commentQuery, Mutation as commentMutation, Other as commentOther } from './comment';
 
 
 const defaultTypeDefs = gql`
@@ -37,14 +37,17 @@ const defaultResolvers: IResolvers<any, any> = {
     Query: {
         _empty: () => 'empty qurey',
         ...bookQuery,
+        ...commentQuery,
     },
     Mutation: {
         _emptyInput: (_, args: { [key: string]: any }) => {
             return args.input;
         },
         ...bookMutation,
+        ...commentMutation,
     },
     ...bookOther,
+    ...commentOther,
 };
 
 export default makeExecutableSchema({

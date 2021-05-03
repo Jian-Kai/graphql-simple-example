@@ -23,16 +23,16 @@ export const typeDefs = gql`
 
 export const Query = {
     books: async (_parent: any, _args: any, { dataSources }: any) => {
-        const { bookAPI } = dataSources;
-        return bookAPI.getBooks();
+        const { ThirdPartyAPI } = dataSources;
+        return ThirdPartyAPI.getBooks();
     }
 };
 
 export const Mutation = {
     addBook: (_: any, args: { [key: string]: any }, { dataSources }: any) => {
-        const { bookAPI } = dataSources;
+        const { ThirdPartyAPI } = dataSources;
         const { book } = args;
-        return bookAPI.addBook(book.title, book.author);
+        return ThirdPartyAPI.addBook(book.title, book.author);
     },
 };
 

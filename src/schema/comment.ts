@@ -18,3 +18,9 @@ export const typeDefs = gql`
         addComment2Book(comment: CommentInput): Comment
     }
 `;
+
+export const Query = {};
+
+export const Mutation = {};
+
+export const Other = {};
